@@ -69,7 +69,7 @@ Run the application and use the interface to:
 - add and update teams  
 - view statistics  
 - test filters and queries
-- 
+  
 ## Learning Outcomes
 This project demonstrates:
 
