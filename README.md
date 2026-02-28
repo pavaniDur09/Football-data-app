@@ -15,7 +15,7 @@ The system demonstrates full-stack development principles including database des
 - Calculate and display average goals  
 - Filter teams based on performance criteria  
 
-## 🛠 Technologies Used
+## Technologies Used
 
 ### Frontend
 - React.js
@@ -79,9 +79,3 @@ This project demonstrates:
 - Frontend-backend communication  
 - Data visualisation and user interaction  
 - Debugging and application testing  
-
-## Future Improvements
-- Deploy application to cloud hosting  
-- Add authentication and user accounts  
-- Improve UI styling and accessibility  
-- Implement real-time data updates  
