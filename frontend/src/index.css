@@ -1,0 +1,273 @@
+/* Global Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fc; /* Light background */
+  color: #333; /* Dark text for readability */
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: url('https://images.pexels.com/photos/262713/pexels-photo-262713.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;;
+  overflow-x: hidden;
+  background-size: cover;
+}
+
+h1, h2 {
+  color: #34495e; /* Dark slate color */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #6a1071; /* Blue color for headings */
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+/* Main Container for the Form */
+form {
+  width: 80%;
+  max-width: 800px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Form Elements */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 9px 0;
+  border: 1.5px solid #0b0a0a;
+  border-radius: 2px;
+  font-size: 1em;
+  box-sizing: border-box;
+  
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #5c208a; /* Highlighted border on focus */
+  outline: none;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 1px;
+  color: #280b3b;
+}
+
+/* Buttons */
+button {
+  background-color: #c389c5; /*button color  */
+  color: white;
+  border: none;
+  padding: 10px   10px;
+  border-radius: 3px;
+  font-size: 1.4em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  width: 50%; /* Full width for the button */
+}
+
+button:hover {
+  background-color: #7d4eb2; /* Lighter green on hover */
+  transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+button:active {
+  transform: scale(1); /* Reset size when clicked */
+}
+
+/* Flexbox Container for Buttons (for alignment) */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Tables for displaying records */
+table {
+  width: 80%;
+  margin: 30px 0;
+  border-collapse: collapse;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #bfb4b4;
+}
+
+th {
+  background-color: #9142a1;
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  background-color: #ecf0f1;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #bdc3c7; /* Slightly darker on hover */
+}
+
+/* Form Validation Messages */
+.error-message {
+  color: rgb(177, 24, 24);
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+/* Notification/Success Message */
+.success-message {
+  color: rgb(34, 139, 34);
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+/* Card Style for Team Information */
+.team-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+
+.team-card h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #34495e;
+}
+
+.team-card p {
+  margin: 5px 0;
+  color: #7f8c8d;
+}
+
+.team-card .team-info {
+  margin: 10px 0;
+  text-align: left;
+}
+
+/* Layout Container */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Specific Styling for "Add Team", "Update Team" and other titles */
+.add-update-text {
+  color: #692867; /* Blue color for headings */
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Component-specific Styling */
+.add-team {
+  background-color: #5a0547;
+  color: white;
+}
+
+.update-team {
+  background-color: #f39c12;
+  color: white;
+}
+
+.delete-team {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.view-teams {
+  background-color: #8e44ad;
+  color: white;
+}
+
+/* Loader (Spinner) */
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+/*home page*/
+.home-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Overlay for a dim effect */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black */
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+}
+
+/* Title styling */
+.title {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Button Container */
+.button1-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Button Styling */
+.button1 {
+  background-color: #5c208a;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.button1:hover {
+  background-color: #7d4eb2;
+}
